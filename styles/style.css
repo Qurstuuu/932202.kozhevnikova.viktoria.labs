@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    font-size: 24px;
+}
+td > button{
+    min-width: 2.5em;
+    display: block;
+    text-align: center;
+    width: 100%;
+    min-height: 2.5em;
+    background: linear-gradient(white, lightgray);
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #aaa;
+    border-style: solid;
+}
+td > input{
+    text-align: right;
+    line-height: 2;
+    padding-right: 7px;
+    width: 100%;
+}
+td > label{
+    position: absolute;
+    line-height: 2.15;
+    color: #aaa;
+}
+td{
+    text-align: right;
+    padding: 2px;
+}
+table{
+    padding: 10px;
+    border-color: rgb(79, 154, 216);
+    border-width: 4px;
+    border-style: solid;
+    margin: 10px;
+}
