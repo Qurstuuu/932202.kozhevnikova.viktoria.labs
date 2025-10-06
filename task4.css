@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+#wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #edeef0;
+}
+.header{ 
+    background-color: #507299;
+}
+.header > img{
+    margin-top: 10px;
+    margin-left: 15%;
+}
+.sidebar{
+    @media (max-width: 600px) {
+        text-align: center;
+    }
+    @media (min-width: 600px) {
+        float: left;
+        width: 200px;
+        height: auto;
+        padding-left: 10px;
+        padding-top: 25px;
+    }
+}
+.sidebar > ul > li{
+    display: inline-block;
+    @media (min-width: 600px) {
+        width: 140px;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+.sidebar > ul > li > a{
+    display: block;
+    padding: 7px;
+    color: #2e5473;
+}
+.sidebar > ul > li > a:hover{
+    background: #e1e5eb;
+    border-radius: 3px;
+}
+.main{
+    margin-left: 0;
+    @media (min-width: 600px) {
+        margin-left: 200px;
+        text-align: justify;
+        min-height: calc(100vh - 84px);
+    }
+    @media (min-width: 1050px) {
+        margin-right: 200px;
+    }
+}
+.main > article > img{
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    @media (min-width: 1050px) {
+        margin-right: 200px;
+    }
+}
+.important_text{
+    position: fixed;
+    width: 200px;
+    top: 75px;
+    right: calc(50% - 500px);
+    @media (max-width: 1050px) {
+        display: none;
+    }
+}
+.important_text > article > p{
+    background-color: #e1e5eb;
+}
+h3{
+    font-size: 17px;
+    padding: 5px;
+}
+.footer{
+    background-color: white;
+    color: #d0d0d0;
+    text-align: center;
+    padding: 3px;
+    bottom: 0;
+    font-size: large;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 1050px) {
+        max-width: 800px;
+    }
+    @media (min-width: 1050px) {
+        max-width: 1000px;
+    }
+}
+.divider{
+    background-color: #d0d0d0;
+    height: 2px;
+}
+.like{
+    float: left;
+}
+.comment{
+    text-align: right;
+}
+a{
+    color: #2e5473;
+    text-decoration: none;
+}
+article {
+    background: white;
+    border: #d0d0d0 solid 1px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+::selection{
+    background: #e1e5eb;
+    color: green;
+}
