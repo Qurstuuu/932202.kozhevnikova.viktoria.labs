@@ -1,0 +1,21 @@
+@using System
+@{
+    var rand = new Random();
+    int first = rand.Next(11);
+    int second = rand.Next(11);
+}
+
+<h6>Rand value first: @first</h6>
+<h6>Rand value second: @second</h6>
+
+<h6>Add:</h6>
+<p>@first + @second = @(first + second)</p>
+
+<h6>Sub:</h6>
+<p>@first - @second = @(first - second)</p>
+
+<h6>Mult:</h6>
+<p>@first * @second = @(first * second)</p>
+
+<h6>Div:</h6>
+<p>@(second != 0 ? $"{first} / {second} = {first / second}" : "Cannot divide by zero")</p>

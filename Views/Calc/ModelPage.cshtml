@@ -1,0 +1,15 @@
+@model CalcModel
+@{
+    
+        ViewData["Title"] = "PassUsingModel";
+}
+<h6>Rand value first: @Model.first</h6>
+<h6>Rand value second: @Model.second</h6>
+<h6>Add:</h6>
+<p>@Model.first + @Model.second = @Model.Add()</p>
+<h6>Sub:</h6>
+<p>@Model.first - @Model.second = @Model.Sub()</p>
+<h6>Mult:</h6>
+<p>@Model.first * @Model.second = @Model.Mult()</p>
+<h6>Div:</h6>
+<p>@Model.first / @Model.second = @Model.Div()</p>
